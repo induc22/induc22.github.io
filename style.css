@@ -3,15 +3,15 @@ body{
     padding: 0;
     background: url("background.png");
     background-size: cover;
+    color:#F2F2F2
 }
 .box{
     width: 450px;
-    background: lightblue;/*rgba(87, 89, 88, 0.4);*/
+    background:#65CCB8;/*rgba(87, 89, 88, 0.4);*/
     padding: 40px;
     text-align: center;
     margin: auto;
     margin-top: 5%;
-    color: white;
     font-family: 'Century Gothic', sans-serif;
     border-radius: 5px;
 }
@@ -26,6 +26,7 @@ body{
       -o-box-shadow: 0 0 20px  rgba(0,0,0,0.6);
 }
 .box h1{
+    font-family: monospace;
     font-size: 40px;
     letter-spacing: normal;
     font-weight: 100;
@@ -48,13 +49,13 @@ ul{
     list-style: none;
 }
 .box li a{
-    color: white;
     text-decoration: none;
     font-size: 60px;
     transition: all ease-in-out 250ms;
+    color: #3B945E;
 }
 .box li a:hover{
-    color: #b9b9b9;
+    color: #182628
 }
 
 #mySidenav a {
@@ -67,11 +68,12 @@ ul{
     font-size: 20px; /* Increase font size */
     color: white; /* White text color */
     border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-    background-color: lightblue;/*#E7B8B8*/
+    font-family: 'Century Gothic', sans-serif;
+    background-color: #65CCB8/*#E7B8B8;*/
   }
   
   #mySidenav a:hover {
-    background-color: #b9b9b9; /* On mouse-over, make the elements appear as they should */
+    background-color: #5c5b5b; /* On mouse-over, make the elements appear as they should */
   }
   
   /* The about link: 20px from the top with a green background */
@@ -82,19 +84,16 @@ ul{
   
   #blog {
     top: 140px;
-    background-color: #E7B8B8; /* Blue */
   }
   
   #projects {
     top: 80px;
-    background-color: #E7B8B8; /* Red */
   }
   
   #contact {
     top: 200px;
-    background-color: #E7B8B8 /* Light Black */
   }
 
   #mySidenav .current {
-    background-color: #b9b9b9
+    background-color: #182628
   }
