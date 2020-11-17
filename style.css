@@ -1,13 +1,13 @@
 body{
     margin: 0;
     padding: 0;
-    background: url("background.png");
+    background-color: #65CCB8;
     background-size: cover;
-    color:#F2F2F2
+    color:black
 }
 .box{
     width: 450px;
-    background:#65CCB8;/*rgba(87, 89, 88, 0.4);*/
+    background:#F2F2F2;/*rgba(87, 89, 88, 0.4);*/
     padding: 40px;
     text-align: center;
     margin: auto;
