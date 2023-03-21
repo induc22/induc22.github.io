@@ -1,3 +1,9 @@
+/* 7B1618
+C4907E
+D9DBDD
+577F91
+252627 */
+
 body{
     /* background-color: #F6BD60; */
     background: #D9DBDD;
@@ -19,7 +25,7 @@ body{
     height: 100vh;
     width: fit-content;
     scroll-snap-align: start;
-    margin-left:350px;
+    margin-left:300px;
     margin-right:100px;
 }
 
