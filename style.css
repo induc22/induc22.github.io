@@ -17,9 +17,10 @@ body{
 .page {
     display: flex;
     height: 100vh;
-    width: 100vh;
+    width: fit-content;
     scroll-snap-align: start;
     margin-left:350px;
+    margin-right:100px;
 }
 
 .nav-box{
