@@ -27,6 +27,7 @@ body{
     scroll-snap-align: start;
     margin-left:300px;
     margin-right:100px;
+    font-size: 150%;
 }
 
 .nav-box{
@@ -34,14 +35,14 @@ body{
     width: 20%;
     max-width:180px;
     height: 100vh;
-    background:#C4907E; /*#F7EDE2;*/
+    background:#577F91; /*#F7EDE2;*/
     padding: 30px;
     text-align: center;
     margin-top: 0%;
     font-family:"Century Gothic", "sans serif";
 }
 .nav-box-img{
-    border: 5px solid #577F91;
+    border: 5px solid #f4bdaa;
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -76,7 +77,7 @@ body{
     text-decoration: none;
     font-size: 60px;
     transition: all ease-in-out 250ms;
-    color: #577F91;
+    color: #f4bdaa;
 }
 .nav-box a:hover{
     color: #ffffff;
@@ -100,16 +101,18 @@ body{
   float:left;
   font-family:'Century Gothic', sans-serif;
   overflow-wrap: break-word;
+  width: 40%;
 }
 
 .about-me span{
-  color:#577F91;
+  color:#7B1618;
   font-size: 150%;
   font-weight: 900;
 }
 
 .about-me h1{
   text-align: center;
+  color: #252627;
 }
 
 
@@ -122,6 +125,7 @@ body{
   margin: auto;
   margin-top: 20%;
   font-family:"Century Gothic", "sans serif";
+  color: #252627;
 }
 
 /* .parent {
