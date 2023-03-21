@@ -1,15 +1,29 @@
 body{
     /* background-color: #F6BD60; */
     background: #D9DBDD;
+    overflow: hidden;
 } 
 
-.page {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
+.container::-webkit-scrollbar{
+  display: none;
 }
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    scroll-snap-align: start;
+    margin-left:350px;
+}
+
 .nav-box{
-    float: left;
+    position: fixed;
     width: 20%;
     max-width:180px;
     height: 100vh;
@@ -41,10 +55,11 @@ body{
 .nav-box p{
     text-align: center;
 }
-ul{
-    margin: 0;
-    padding: 0;
+
+.nav-box ul{
+  padding: 0%;
 }
+
 .nav-box li{
     display: inline-block;
     margin: 6px;
@@ -70,14 +85,14 @@ ul{
   letter-spacing: 2px;
   font-weight: 200;
   line-height: 300%;
+  overflow-y: scroll;
 }
 
 .about-me-box{
-  margin-top: 15%;
-  float: left;
-  width: 65%;
-  margin-left: 10%;
+  margin-top: 10%;
+  float:left;
   font-family:'Century Gothic', sans-serif;
+  overflow-wrap: break-word;
 }
 
 .about-me span{
@@ -97,10 +112,8 @@ ul{
   bottom: 0;
   overflow:auto;
   padding: 30px;
-  text-align: center;
   margin: auto;
   margin-top: 20%;
-  margin-left: 50%;
   font-family:"Century Gothic", "sans serif";
 }
 
