@@ -1,99 +1,109 @@
 body{
-    margin: 0;
-    padding: 0;
-    background-color: #65CCB8;
-    background-size: cover;
-    color:black
+    background-color: #F6BD60;
+} 
+
+.page {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
 }
-.box{
-    width: 450px;
-    background:#F2F2F2;/*rgba(87, 89, 88, 0.4);*/
-    padding: 40px;
+.nav-box{
+    float: left;
+    width: 20%;
+    max-width:180px;
+    height: 100vh;
+    overflow:auto;
+    background:#F7EDE2;
+    padding: 30px;
     text-align: center;
-    margin: auto;
-    margin-top: 5%;
-    font-family: 'Century Gothic', sans-serif;
-    border-radius: 5px;
+    margin-top: 0%;
+    font-family:"Century Gothic", "sans serif";
 }
-.box-img{
-    width: 200px;
-    height: 200px;
+.nav-box-img{
+    border: 5px solid #F28482;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 200px;
-    box-shadow:  0 0 20px  rgba(0,0,0,0.6);
-      -moz-box-shadow: 0 0 20px  rgba(0,0,0,0.6);
-      -webkit-box-shadow: 0 0 20px  rgba(0,0,0,0.6);
-      -o-box-shadow: 0 0 20px  rgba(0,0,0,0.6);
 }
-.box h1{
-    font-family: monospace;
-    font-size: 40px;
+.nav-box h1{
+    font-size: 25px;
     letter-spacing: normal;
     font-weight: 100;
 }
-.box h2{
-    font-size: 20px;
+.nav-box h2{
+    font-size: 15px;
     letter-spacing: 3px;
     font-weight: 100;
+    line-height: 200%;
 }
-.box p{
+.nav-box p{
     text-align: center;
 }
 ul{
     margin: 0;
     padding: 0;
 }
-.box li{
+.nav-box li{
     display: inline-block;
     margin: 6px;
     list-style: none;
 }
-.box li a{
+.nav-box li a{
     text-decoration: none;
     font-size: 60px;
     transition: all ease-in-out 250ms;
-    color: #3B945E;
+    color: #84A59D;
 }
-.box li a:hover{
-    color: #182628
-}
-
-#mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
-    /*left: -80px; /* Position them outside of the screen */
-    /*transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-    font-family: 'Century Gothic', sans-serif;
-    background-color: #65CCB8/*#E7B8B8;*/
-  }
-  
-  #mySidenav a:hover {
-    background-color: #5c5b5b; /* On mouse-over, make the elements appear as they should */
-  }
-  
-  /* The about link: 20px from the top with a green background */
-  #home {
-    top: 20px;
+.nav-box a:hover{
+    color: #7b3e3d;
+    font-weight: 900;
     
-  }
-  
-  #blog {
-    top: 140px;
-  }
-  
-  #projects {
-    top: 80px;
-  }
-  
-  #contact {
-    top: 200px;
-  }
+}
+.nav-box a{
+  text-decoration: none;
+  font-family:"Century Gothic", "sans serif";
+  transition: all ease-in-out 250ms;
+  color:#F28482;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  line-height: 300%;
+}
 
-  #mySidenav .current {
-    background-color: #182628
-  }
+.about-me-box{
+  margin-top: 5%;
+  float: left;
+  width: 50%;
+  margin-left: 10%;
+}
+
+.about-me h1{
+  text-align: center;
+  font-family:"Century Gothic", "sans serif";
+}
+
+
+.about-me p{
+  position: relative;
+  height: 100vh;
+  bottom: 0;
+  overflow:auto;
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20%;
+  margin-left: 50%;
+  font-family:"Century Gothic", "sans serif";
+}
+
+/* .parent {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.child {
+  width: 33%;
+  float: left;
+} */
