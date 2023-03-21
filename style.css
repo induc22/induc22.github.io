@@ -1,26 +1,48 @@
+/* 7B1618
+C4907E
+D9DBDD
+577F91
+252627 */
+
 body{
-    background-color: #F6BD60;
+    /* background-color: #F6BD60; */
+    background: #D9DBDD;
+    overflow: hidden;
 } 
 
-.page {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
+.container::-webkit-scrollbar{
+  display: none;
 }
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+    width: fit-content;
+    scroll-snap-align: start;
+    margin-left:300px;
+    margin-right:100px;
+    font-size: 150%;
+}
+
 .nav-box{
-    float: left;
+    position: fixed;
     width: 20%;
     max-width:180px;
     height: 100vh;
-    overflow:auto;
-    background:#F7EDE2;
+    background:#577F91; /*#F7EDE2;*/
     padding: 30px;
     text-align: center;
     margin-top: 0%;
     font-family:"Century Gothic", "sans serif";
 }
 .nav-box-img{
-    border: 5px solid #F28482;
+    border: 5px solid #f4bdaa;
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -30,6 +52,7 @@ body{
     font-size: 25px;
     letter-spacing: normal;
     font-weight: 100;
+    color:#FFFFFF;
 }
 .nav-box h2{
     font-size: 15px;
@@ -40,10 +63,11 @@ body{
 .nav-box p{
     text-align: center;
 }
-ul{
-    margin: 0;
-    padding: 0;
+
+.nav-box ul{
+  padding: 0%;
 }
+
 .nav-box li{
     display: inline-block;
     margin: 6px;
@@ -53,10 +77,10 @@ ul{
     text-decoration: none;
     font-size: 60px;
     transition: all ease-in-out 250ms;
-    color: #84A59D;
+    color: #f4bdaa;
 }
 .nav-box a:hover{
-    color: #7b3e3d;
+    color: #ffffff;
     font-weight: 900;
     
 }
@@ -64,23 +88,31 @@ ul{
   text-decoration: none;
   font-family:"Century Gothic", "sans serif";
   transition: all ease-in-out 250ms;
-  color:#F28482;
+  color:#FFFFFF;
   font-size: 16px;
   letter-spacing: 2px;
   font-weight: 200;
   line-height: 300%;
+  overflow-y: scroll;
 }
 
 .about-me-box{
-  margin-top: 5%;
-  float: left;
-  width: 50%;
-  margin-left: 10%;
+  margin-top: 10%;
+  float:left;
+  font-family:'Century Gothic', sans-serif;
+  overflow-wrap: break-word;
+  width: 40%;
+}
+
+.about-me span{
+  color:#7B1618;
+  font-size: 150%;
+  font-weight: 900;
 }
 
 .about-me h1{
   text-align: center;
-  font-family:"Century Gothic", "sans serif";
+  color: #252627;
 }
 
 
@@ -90,11 +122,10 @@ ul{
   bottom: 0;
   overflow:auto;
   padding: 30px;
-  text-align: center;
   margin: auto;
   margin-top: 20%;
-  margin-left: 50%;
   font-family:"Century Gothic", "sans serif";
+  color: #252627;
 }
 
 /* .parent {
