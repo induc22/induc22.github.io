@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
         <link rel="stylesheet" href="style.css">
         <title>About Me</title>
     </head>
@@ -21,7 +20,6 @@
                 </ul>
             </div>
             <div class="page">
-                <!-- <div class="space-box"></div> -->
                 <div class="about-me-box">
                     <h1 class="about-me"> Hi there! My name is Indu.</h1>
                     <p class="about-me">I am a third-year <span>Computer Engineering</span> student at Georgia Tech passionate about <span>robotics and embedded systems.</span></p>
@@ -29,93 +27,28 @@
                 </div>
                 <div class="about-me-box">
                     <div class="slideshow">
-                        <p class="titles">I am a <span id="slide_caption"></span></p> <!-- TODO: add scrolling text -->
-                        <section class="carousel" aria-label="Gallery">
-                            <ol class="carousel__viewport">
-                            <li id="carousel__slide1"
-                                tabindex="0"
-                                class="carousel__slide">
-                                <div class="carousel__snapper">
-                                <a href="#carousel__slide4"
-                                    class="carousel__prev">Go to last slide</a>
-                                <a href="#carousel__slide2"
-                                    class="carousel__next">Go to next slide</a>
-                                </div>
-                            </li>
-                            <li id="carousel__slide2"
-                                tabindex="0"
-                                class="carousel__slide">
-                                <div class="carousel__snapper"></div>
-                                <a href="#carousel__slide1"
-                                class="carousel__prev">Go to previous slide</a>
-                                <a href="#carousel__slide3"
-                                class="carousel__next">Go to next slide</a>
-                            </li>
-                            <li id="carousel__slide3"
-                                tabindex="0"
-                                class="carousel__slide">
-                                <div class="carousel__snapper"></div>
-                                <a href="#carousel__slide2"
-                                class="carousel__prev">Go to previous slide</a>
-                                <a href="#carousel__slide4"
-                                class="carousel__next">Go to next slide</a>
-                            </li>
-                            <li id="carousel__slide4"
-                                tabindex="0"
-                                class="carousel__slide">
-                                <div class="carousel__snapper"></div>
-                                <a href="#carousel__slide3"
-                                class="carousel__prev">Go to previous slide</a>
-                                <a href="#carousel__slide5"
-                                class="carousel__next">Go to next slide</a>
-                            </li>
-                            <li id="carousel__slide5"
-                                tabindex="0"
-                                class="carousel__slide">
-                                <div class="carousel__snapper"></div>
-                                <a href="#carousel__slide4"
-                                class="carousel__prev">Go to previous slide</a>
-                                <a href="#carousel__slide6"
-                                class="carousel__next">Go to next slide</a>
-                            </li>
-                            <li id="carousel__slide6"
-                                tabindex="0"
-                                class="carousel__slide">
-                                <div class="carousel__snapper"></div>
-                                <a href="#carousel__slide5"
-                                class="carousel__prev">Go to previous slide</a>
-                                <a href="#carousel__slide1"
-                                class="carousel__next">Go to first slide</a>
-                            </li>
-                            </ol>
-                            <aside class="carousel__navigation">
-                            <ol class="carousel__navigation-list">
-                                <li class="carousel__navigation-item">
-                                <a href="#carousel__slide1"
-                                    class="carousel__navigation-button">Go to slide 1</a>
-                                </li>
-                                <li class="carousel__navigation-item">
-                                <a href="#carousel__slide2"
-                                    class="carousel__navigation-button">Go to slide 2</a>
-                                </li>
-                                <li class="carousel__navigation-item">
-                                <a href="#carousel__slide3"
-                                    class="carousel__navigation-button">Go to slide 3</a>
-                                </li>
-                                <li class="carousel__navigation-item">
-                                <a href="#carousel__slide4"
-                                    class="carousel__navigation-button">Go to slide 4</a>
-                                </li>
-                                <a href="#carousel__slide5"
-                                    class="carousel__navigation-button">Go to slide 3</a>
-                                </li>
-                                <li class="carousel__navigation-item">
-                                <a href="#carousel__slide6"
-                                    class="carousel__navigation-button">Go to slide 4</a>
-                                </li>
-                            </ol>
-                            </aside>
-                        </section>
+                        <div class="carousel">
+                            <div class="slider">
+                                <section><img src="about_me_photos/supp_professional_attire.JPEG"></section>
+                                <section><img src="about_me_photos/l3harris.JPEG"></section>
+                                <section><img src="about_me_photos/poster_win_ors.jpeg"></section>
+                                <section><img src="about_me_photos/hive_hiking.PNG"></section>
+                                <section><img src="about_me_photos/supp_eoy.JPG"></section>
+                                <section><img src="about_me_photos/wece_google.JPG"></section>
+                            </div>
+                            <div class="controls">
+                                <span class="arrow left">.</span>
+                                <span class="arrow right">.</span>
+                                <ul>
+                                    <li class="selected"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,5 +63,6 @@
                 </div>
             </div>
         </div>
+        <script src="about_me_animation.js"></script>
     </body>
 </html>
