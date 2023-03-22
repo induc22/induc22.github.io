@@ -21,6 +21,7 @@ body{
 }
 
 .page {
+    position: relative;
     display: inline-block;
     height: 100vh;
     width: fit-content;
@@ -100,14 +101,15 @@ body{
 }
 
 .about-me-box{
-  float:left;
-  margin-top: 10%;
+  float: left;
   font-family:'Century Gothic', sans-serif;
   overflow-wrap: break-word;
   width: 40%;
   color: #252627;
   font-size: 1.5vw;
-  padding: 1vw;
+  padding-inline: 2vw;
+  transform: translate(0, 50vh);
+  margin-top: -20%;
 }
 
 .about-me span{
@@ -118,8 +120,7 @@ body{
 
 .about-me p{
   position: relative;
-  height: 100vh;
-  margin-top: 20%;
+  /* height: 100vh; */
   font-family:"Century Gothic", "sans serif";
   color: #252627;
   text-align:center;
@@ -138,6 +139,8 @@ body{
 .about-me-box .resume:hover{
   font-weight: 900;
 }
+
+/* https://css-tricks.com/css-only-carousel/ */
 
 @keyframes tonext {
   75% {
