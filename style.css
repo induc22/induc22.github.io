@@ -127,7 +127,7 @@ body{
 .about-me-box .resume{
   background: #f4bdaa;
   padding: 1vw;
-  border-radius:10px;
+  border-radius:0.5vw;
   text-decoration: none;
   color:#7B1618;
   border-color:#252627;
