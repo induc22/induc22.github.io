@@ -1,33 +1,3 @@
-// const txts=document.querySelector(".animate-text").children,
-//         txtsLen=txts.length;
-//     let index=0;
-//     const textInTimer=3000,
-//         textOutTimer=2800;
-
-//     function animateText() {
-//     for(let i=0; i<txtsLen; i++){
-//         txts[i].classList.remove("text-in","text-out");  
-//     }
-//     txts[index].classList.add("text-in");
-
-//     setTimeout(function(){
-//         txts[index].classList.add("text-out");              
-//     },textOutTimer)
-
-//     setTimeout(function(){
-
-//         if(index == txtsLen-1){
-//             index=0;
-//         }
-//         else{
-//             index++;
-//             }
-//         animateText();
-//     },textInTimer); 
-//     }
-    
-//     window.onload=animateText;
-
 const sliderPhotos = document.querySelector('.slider.photos');
 const sliderText = document.querySelector('.slider.text');
 
@@ -39,7 +9,8 @@ var sectionIndex = 0;
 function setIndex() {
     document.querySelector('.controls .selected').classList.remove('selected');
     sliderPhotos.style.transform = 'translateX(' + (sectionIndex) * -16.666 + '%)';
-    sliderText.style.transform = 'translateY(' + (sectionIndex) * -16.666 + '%)';
+    // sliderText.style.transform = 'translateY(min(' + (sectionIndex) * -1.2 + 'em, ' + (sectionIndex) * -11.2 + 'px)';
+    sliderText.style.transform = 'translateY(clamp(' + (sectionIndex) * -40 + 'px, ' + (sectionIndex) * -1.2 + 'em, ' + (sectionIndex) * -11.2 + 'px)';
 }
 
 document.querySelectorAll('.controls li').forEach(function(indicator, ind) {

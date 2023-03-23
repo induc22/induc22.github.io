@@ -25,10 +25,10 @@ body{
     display: flex;
     height: 100%;
     width: 80%;
-    /* width: fit-content; */
+    width: fit-content;
     scroll-snap-align: start;
     font-size: 150%;
-    margin-left: clamp(200px, 38vw, 350px);
+    margin-left: clamp(180px, 38vw, 350px);
     align-items: center;
 }
 
@@ -36,7 +36,6 @@ body{
     position: fixed;
     width: 20vw;
     max-width:180px;
-    /* min-width:140px; */
     height: 100vh;
     background:#577F91; /*#F7EDE2;*/
     padding: 30px;
@@ -105,9 +104,8 @@ body{
 .about-me-box{
   float: left;
   font-family:'Century Gothic', sans-serif;
-  overflow-wrap: break-word;
   width: 40%;
-  height: 70vh;
+  height: 60vh;
   color: #252627;
   font-size: 1.5vw;
   padding-inline: 2vw;
@@ -147,9 +145,21 @@ body{
   filter: drop-shadow(0 0 10px #0003);
 }
 
-.carousel {
+.carousel.photos {
   position: relative;
-  height: 400px;
+  overflow: hidden;
+}
+
+.carousel.photos {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel.text {
+  position: absolute;
+  height: 1.2em;
+  margin-left: 4.7em;
+  float: left;
   overflow: hidden;
 }
 
@@ -165,7 +175,23 @@ body{
   display: inline-block;
   width: 100%;
   transition: all 0.3s;
-  font-size: 18px;
+  font-size: 100%;
+  padding: 0;
+}
+
+.caption {
+  display: flex;
+  justify-content: center;
+  font-size: 80%;
+}
+
+.caption p {
+  width: 20%;
+  float: left;
+  margin: 0;
+  font-size: 100%;
+  text-align: center;
+  transform: translateX(-6.2em);
 }
 
 .slider.photos section {
@@ -175,12 +201,13 @@ body{
   align-items: center;
 }
 
-.slider.text section {
+.slider.text span {
   flex-basis: 100%;
   display: flex;
   justify-content: left;
-  margin-left: 8vw;
+  padding: 0;
   align-items: center;
+  font-size: 100%;
 }
 
 .carousel section img {
