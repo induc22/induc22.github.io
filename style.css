@@ -66,29 +66,31 @@ body{
     line-height: 200%;
 }
 .nav-box p{
-    text-align: center;
+  text-align: center;
 }
 
 .nav-box ul{
   padding: 0%;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-box ul li{
-    display: flex;
-    margin: 0;
-    list-style: none;
+  list-style: none;
+  padding: 1.5vh;
 }
-.nav-box ul li a{
-    text-decoration: none;
-    font-size: 20px;/*clamp(10px, 2.5px, 60px);*/
-    transition: all ease-in-out 250ms;
-    color: #f4bdaa;
+
+.nav-box ul li img{
+  text-decoration: none;
+  width: 7vh;
+  height: 7vh;
 }
+
 .nav-box a:hover{
-    color: #ffffff;
-    font-weight: 900;
-    
+  color: #ffffff;
+  font-weight: 900;  
 }
+
 .nav-box a{
   text-decoration: none;
   font-family:"Century Gothic", "sans serif";
@@ -124,7 +126,7 @@ body{
   text-align:center;
 }
 
-.about-me-box .resume{
+.button {
   background: #f4bdaa;
   padding: 1vw;
   border-radius:0.5vw;
@@ -134,7 +136,7 @@ body{
   border-width: 1vw;
 }
 
-.about-me-box .resume:hover{
+.button:hover {
   font-weight: 900;
 }
 
