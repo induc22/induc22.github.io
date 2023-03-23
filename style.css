@@ -7,6 +7,7 @@ D9DBDD
 body{
     background: #D9DBDD;
     overflow: hidden;
+    font-family:"Century Gothic", "sans serif";
 } 
 
 .container::-webkit-scrollbar{
@@ -41,7 +42,6 @@ body{
     padding: 30px;
     text-align: center;
     margin-top: 0%;
-    font-family:"Century Gothic", "sans serif";
     font-size: min(2vw, 15px);
 }
 .nav-box-img{
@@ -80,10 +80,14 @@ body{
   padding: 1.5vh;
 }
 
-.nav-box ul li img{
+.nav-box ul li img {
   text-decoration: none;
   width: 7vh;
   height: 7vh;
+}
+
+.nav-box ul li img:hover {
+  transform: scale(1.1);
 }
 
 .nav-box a:hover{
