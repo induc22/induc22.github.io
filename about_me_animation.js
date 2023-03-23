@@ -9,7 +9,6 @@ var sectionIndex = 0;
 function setIndex() {
     document.querySelector('.controls .selected').classList.remove('selected');
     sliderPhotos.style.transform = 'translateX(' + (sectionIndex) * -16.666 + '%)';
-    // sliderText.style.transform = 'translateY(min(' + (sectionIndex) * -1.2 + 'em, ' + (sectionIndex) * -11.2 + 'px)';
     sliderText.style.transform = 'translateY(clamp(' + (sectionIndex) * -40 + 'px, ' + (sectionIndex) * -1.2 + 'em, ' + (sectionIndex) * -11.2 + 'px)';
 }
 
