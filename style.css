@@ -225,8 +225,7 @@ body{
   background-size: .75vw .75vw;
   background-repeat: no-repeat;
   background-position: center center;
-  color: #333;
-  font-size: 2.5rem;
+  color: transparent;
   line-height: 4rem;
   text-align: center;
   width: 1.5vw;
