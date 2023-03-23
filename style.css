@@ -222,29 +222,25 @@ body{
   content: '';
   z-index: 1;
   background-color: #333;
-  background-size: .75rem .75rem;
+  background-size: .75vw .75vw;
   background-repeat: no-repeat;
   background-position: center center;
   color: #333;
   font-size: 2.5rem;
   line-height: 4rem;
   text-align: center;
-  width: 5%;
-  border-radius: 25px;
-}
-
-.test {
-  font-size: 200%;
-  cursor: pointer;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 1vw;
 }
 
 .arrow.left {
-  left: 10px;
+  left: 0.5vw;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
 .arrow.right {
-  right: 10px;
+  right: 0.5vw;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
@@ -260,11 +256,11 @@ body{
 }
 
 .controls ul li {
-  width: 20px;
-  height: 20px;
+  width: 1vw;
+  height: 1vw;
   border: 2px solid #333;
   border-radius: 50px;
-  margin: 10px;
+  margin: 1vw;
   background: #333;
   cursor: pointer;
 }
