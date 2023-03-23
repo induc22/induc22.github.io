@@ -29,6 +29,7 @@ body{
     scroll-snap-align: start;
     font-size: 150%;
     margin-left: clamp(200px, 38vw, 350px);
+    align-items: center;
 }
 
 .nav-box{
@@ -106,11 +107,11 @@ body{
   font-family:'Century Gothic', sans-serif;
   overflow-wrap: break-word;
   width: 40%;
+  height: 70vh;
   color: #252627;
   font-size: 1.5vw;
   padding-inline: 2vw;
-  transform: translate(0, 50%);
-  margin-top: -20%;
+  border: 1px solid red;
 }
 
 .about-me-box span{
