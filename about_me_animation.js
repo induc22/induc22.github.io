@@ -28,7 +28,8 @@
     
 //     window.onload=animateText;
 
-const slider = document.querySelector('.slider');
+const sliderPhotos = document.querySelector('.slider.photos');
+const sliderText = document.querySelector('.slider.text');
 
 const leftArrow = document.querySelector('.left');
 const rightArrow = document.querySelector('.right');
@@ -37,7 +38,8 @@ var sectionIndex = 0;
 
 function setIndex() {
     document.querySelector('.controls .selected').classList.remove('selected');
-    slider.style.transform = 'translate(' + (sectionIndex) * -16.666 + '%)';
+    sliderPhotos.style.transform = 'translateX(' + (sectionIndex) * -16.666 + '%)';
+    sliderText.style.transform = 'translateY(' + (sectionIndex) * -16.666 + '%)';
 }
 
 document.querySelectorAll('.controls li').forEach(function(indicator, ind) {
@@ -49,13 +51,13 @@ document.querySelectorAll('.controls li').forEach(function(indicator, ind) {
 });
 
 leftArrow.addEventListener('click', function() {
-    sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0;
+    sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 5;
     setIndex();
     indicatorParents.children[sectionIndex].classList.add('selected');
 });
 
 rightArrow.addEventListener('click', function() {
-    sectionIndex = (sectionIndex < 5) ? sectionIndex + 1 : 5;
+    sectionIndex = (sectionIndex < 5) ? sectionIndex + 1 : 0;
     setIndex();
     indicatorParents.children[sectionIndex].classList.add('selected');
 });

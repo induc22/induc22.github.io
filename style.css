@@ -22,8 +22,8 @@ body{
 
 .page {
     position: relative;
-    display: inline-block;
-    height: 100vh;
+    display: flex;
+    height: 100%;
     width: 80%;
     /* width: fit-content; */
     scroll-snap-align: start;
@@ -73,14 +73,14 @@ body{
   padding: 0%;
 }
 
-.nav-box li{
-    display: inline-block;
-    margin: 6px;
+.nav-box ul li{
+    display: flex;
+    margin: 0;
     list-style: none;
 }
-.nav-box li a{
+.nav-box ul li a{
     text-decoration: none;
-    font-size: clamp(20px, 2.5vw, 60px);
+    font-size: 20px;/*clamp(10px, 2.5px, 60px);*/
     transition: all ease-in-out 250ms;
     color: #f4bdaa;
 }
@@ -109,11 +109,11 @@ body{
   color: #252627;
   font-size: 1.5vw;
   padding-inline: 2vw;
-  transform: translate(0, 50vh);
+  transform: translate(0, 50%);
   margin-top: -20%;
 }
 
-.about-me span{
+.about-me-box span{
   color:#7B1618;
   font-size: 110%;
   font-weight: 900;
@@ -141,43 +141,6 @@ body{
   font-weight: 900;
 }
 
-/* https://www.youtube.com/watch?v=gR0-eb5ncEU */
-
-/* .home .home-text p span{
-  font-size: 40px;
-  color:#ff2c45;
-  font-weight: 700;
-  display: inline-block;
-  line-height: 46px;
-  display: none;
-}
-
-.home .home-text p span.text-in{
-display: block;
-animation: textIn .5s ease;
-}
-.home .home-text p span.text-out{
-animation: textOut .5s ease;
-}
-
-@keyframes textIn{
-	0%{
-		transform: translateY(100%);
-	}
-	100%{
-		transform: translateY(0%);
-	}
-}
-@keyframes textOut{
-	0%{
-		transform: translateY(0%);
-	}
-	100%{
-		transform: translateY(-100%);
-
-	}
-} */
-
 .about-me-box .slideshow {
   width: 100%;
   margin: 10px auto;
@@ -197,10 +160,18 @@ animation: textOut .5s ease;
   transition: all 0.3s;
 }
 
-.slider section {
+.slider.photos section {
   flex-basis: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.slider.text section {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: left;
+  margin-left: 8vw;
   align-items: center;
 }
 
