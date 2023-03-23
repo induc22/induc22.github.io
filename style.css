@@ -153,11 +153,19 @@ body{
   overflow: hidden;
 }
 
-.slider {
+.slider.photos {
   height: 100%;
   display: flex;
   width: 600%;
   transition: all 0.3s;
+}
+
+.slider.text {
+  height: 600%;
+  display: inline-block;
+  width: 100%;
+  transition: all 0.3s;
+  font-size: 18px;
 }
 
 .slider.photos section {
