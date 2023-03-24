@@ -22,8 +22,6 @@ body{
 }
 
 .page {
-    position: relative;
-    display: flex;
     height: 100%;
     width: 80%;
     width: fit-content;
@@ -272,4 +270,10 @@ body{
 
 .controls ul li.selected {
   background: transparent;
+}
+
+.projtile {
+  border: 1px solid blue;
+  height: 20vh;
+  width: 10vw;
 }
