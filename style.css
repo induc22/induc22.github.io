@@ -74,8 +74,8 @@ body{
 
 .nav-box ul li img {
   text-decoration: none;
-  width: 4vw;
-  height: 4vw;
+  width: min(4vw, 60px);
+  height: min(4vw, 60px);
 }
 
 .nav-box ul li img:hover {
