@@ -22,10 +22,10 @@ body{
 }
 
 .page {
-    height: 100%;
-    width: fit-content;
-    font-size: 150%;
-    margin-left: clamp(180px, 38vw, 350px);
+  height: 100%;
+  font-size: 150%;
+  margin-left: clamp(180px, 38vw, 350px);
+  border: 1px solid blue;
 }
 
 .nav-box{
