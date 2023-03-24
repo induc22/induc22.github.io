@@ -267,7 +267,9 @@ body{
 }
 
 .projtile {
-  border: 1px solid blue;
-  height: 20vh;
-  width: 10vw;
+  border-radius: 1vw;
+  height: 45vh;
+  width: 20vw;
+  background-color: #f4bdaa;
+  filter: drop-shadow(0 0 10px #0003);
 }
