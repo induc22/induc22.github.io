@@ -2,10 +2,18 @@
 C4907E
 D9DBDD
 577F91
+f4bdaa
 252627 */
 
+/* 
+#0E0B16
+#A239CA
+#4717F6
+#E7DFDD
+*/
+
 body{
-    background: #D9DBDD;
+    background: #0E0B16;
     overflow: hidden;
     font-family:"Century Gothic", "sans serif";
 } 
@@ -32,14 +40,14 @@ body{
     width: 20vw;
     max-width:180px;
     height: 100vh;
-    background:#577F91; /*#F7EDE2;*/
+    background:#4717F6; /*#F7EDE2;*/
     padding: 30px;
     text-align: center;
     margin-top: 0%;
     font-size: min(2vw, 15px);
 }
 .nav-box-img{
-    border: 5px solid #f4bdaa;
+    border: 5px solid #0E0B16;
     width: 15vw;
     max-width: 100px;
     height: 15vw;
@@ -104,13 +112,14 @@ body{
   font-family:'Century Gothic', sans-serif;
   width: 40%;
   height: 60vh;
-  color: #252627;
+  color: #0E0B16;
   font-size: 1.5vw;
   padding-inline: 2vw;
+  color: #FFFFFF;
 }
 
 .about-me-box span{
-  color:#7B1618;
+  color:#A239CA;
   font-size: 110%;
   font-weight: 900;
 }
@@ -118,17 +127,17 @@ body{
 .about-me p{
   position: relative;
   font-family:"Century Gothic", "sans serif";
-  color: #252627;
+  color: #0E0B16;
   text-align:center;
 }
 
 .button {
-  background: #f4bdaa;
+  background: #A239CA;
   padding: 1vw;
   border-radius:0.5vw;
   text-decoration: none;
-  color:#7B1618;
-  border-color:#252627;
+  color:#0E0B16;
+  border-color:#A239CA;
   border-width: 1vw;
 }
 
@@ -139,7 +148,7 @@ body{
 .about-me-box .slideshow {
   width: 100%;
   margin: 10px auto;
-  filter: drop-shadow(0 0 10px #0003);
+  
 }
 
 .carousel.photos {
@@ -177,6 +186,7 @@ body{
 }
 
 .caption {
+  padding-top: 2vh;
   display: flex;
   justify-content: center;
   font-size: 80%;
@@ -269,8 +279,7 @@ body{
 .projtile {
   height: 50vh;
   width: 20vw;
-  background-color: #f4bdaa;
-  filter: drop-shadow(0 0 10px #0003);
+  background-color: #A239CA;
 }
 
 .projtile img {
@@ -283,7 +292,7 @@ body{
 .projtile .title {
   margin-left: 1.5vw;
   transform: translateY(-3vh);
-  color: #252627;
+  color: #0E0B16;
   letter-spacing: 1px;
   font-size: 75%;
   font-weight: 900;
@@ -292,7 +301,7 @@ body{
 .projtile .descr {
   margin-inline: 1.5vw;
   transform: translateY(-3vh);
-  color: #252627;
+  color: #0E0B16;
   letter-spacing: 1px;
   font-size: 50%;
 }
