@@ -22,15 +22,9 @@ body{
 }
 
 .page {
-    position: relative;
-    display: flex;
-    height: 100%;
-    width: 80%;
-    width: fit-content;
-    scroll-snap-align: start;
-    font-size: 150%;
-    margin-left: clamp(180px, 38vw, 350px);
-    align-items: center;
+  height: 100%;
+  font-size: 150%;
+  margin-left: clamp(180px, 38vw, 350px);
 }
 
 .nav-box{
@@ -54,16 +48,14 @@ body{
     border-radius: 200px;
 }
 .nav-box h1{
-    /* font-size: 25px; */
-    letter-spacing: normal;
-    font-weight: 100;
-    color:#FFFFFF;
+  letter-spacing: normal;
+  font-weight: 100;
+  color:#FFFFFF;
 }
 .nav-box h2{
-    /* font-size: 15px; */
-    letter-spacing: 3px;
-    font-weight: 100;
-    line-height: 200%;
+  letter-spacing: 3px;
+  font-weight: 100;
+  line-height: 200%;
 }
 .nav-box p{
   text-align: center;
@@ -82,8 +74,8 @@ body{
 
 .nav-box ul li img {
   text-decoration: none;
-  width: 7vh;
-  height: 7vh;
+  width: min(4vw, 60px);
+  height: min(4vw, 60px);
 }
 
 .nav-box ul li img:hover {
@@ -272,4 +264,40 @@ body{
 
 .controls ul li.selected {
   background: transparent;
+}
+
+.projtile {
+  height: 50vh;
+  width: 20vw;
+  background-color: #f4bdaa;
+  filter: drop-shadow(0 0 10px #0003);
+}
+
+.projtile img {
+  height: 20.5vh;
+  width: 18vw;
+  margin-inline: 1vw;
+  margin-top: 1vw;
+}
+
+.projtile .title {
+  margin-left: 1.5vw;
+  transform: translateY(-3vh);
+  color: #252627;
+  letter-spacing: 1px;
+  font-size: 75%;
+  font-weight: 900;
+}
+
+.projtile .descr {
+  margin-inline: 1.5vw;
+  transform: translateY(-3vh);
+  color: #252627;
+  letter-spacing: 1px;
+  font-size: 50%;
+}
+
+.projtile:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
