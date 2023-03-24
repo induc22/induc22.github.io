@@ -23,12 +23,9 @@ body{
 
 .page {
     height: 100%;
-    width: 80%;
     width: fit-content;
-    scroll-snap-align: start;
     font-size: 150%;
     margin-left: clamp(180px, 38vw, 350px);
-    align-items: center;
 }
 
 .nav-box{
