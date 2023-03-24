@@ -25,7 +25,6 @@ body{
   height: 100%;
   font-size: 150%;
   margin-left: clamp(180px, 38vw, 350px);
-  border: 1px solid blue;
 }
 
 .nav-box{
@@ -49,16 +48,14 @@ body{
     border-radius: 200px;
 }
 .nav-box h1{
-    /* font-size: 25px; */
-    letter-spacing: normal;
-    font-weight: 100;
-    color:#FFFFFF;
+  letter-spacing: normal;
+  font-weight: 100;
+  color:#FFFFFF;
 }
 .nav-box h2{
-    /* font-size: 15px; */
-    letter-spacing: 3px;
-    font-weight: 100;
-    line-height: 200%;
+  letter-spacing: 3px;
+  font-weight: 100;
+  line-height: 200%;
 }
 .nav-box p{
   text-align: center;
@@ -77,8 +74,8 @@ body{
 
 .nav-box ul li img {
   text-decoration: none;
-  width: 7vh;
-  height: 7vh;
+  width: 4vw;
+  height: 4vw;
 }
 
 .nav-box ul li img:hover {
