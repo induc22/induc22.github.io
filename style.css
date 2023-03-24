@@ -267,9 +267,37 @@ body{
 }
 
 .projtile {
-  border-radius: 1vw;
-  height: 45vh;
+  height: 50vh;
   width: 20vw;
   background-color: #f4bdaa;
   filter: drop-shadow(0 0 10px #0003);
+}
+
+.projtile img {
+  height: 20.5vh;
+  width: 18vw;
+  margin-inline: 1vw;
+  margin-top: 1vw;
+}
+
+.projtile .title {
+  margin-left: 1.5vw;
+  transform: translateY(-3vh);
+  color: #252627;
+  letter-spacing: 1px;
+  font-size: 75%;
+  font-weight: 900;
+}
+
+.projtile .descr {
+  margin-inline: 1.5vw;
+  transform: translateY(-3vh);
+  color: #252627;
+  letter-spacing: 1px;
+  font-size: 50%;
+}
+
+.projtile:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
